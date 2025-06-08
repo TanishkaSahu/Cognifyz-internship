@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Registration</title>
+<link rel="stylesheet" href="task6.css">
+</head>
+<body>
+
+  <div class="formContainer">
+    <h2>Student Registration</h2>
+<!-- various input tag -->
+    <label>Name</label>
+    <input type="text" id="name" placeholder="Enter your name">
+    <div class="error" id="nameError"></div>
+
+    <label>Father's Name</label>
+    <input type="text" id="fatherName" placeholder="Enter father's name">
+    <div class="error" id="fatherNameError"></div>
+
+    <label>College</label>
+    <input type="text" id="college" placeholder="Enter college name">
+    <div class="error" id="collegeError"></div>
+
+    <label>Year</label>
+    <select id="year">
+      <option value="">Select year</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select>
+    <div class="error" id="yearError"></div>
+
+    <label>Branch</label>
+    <select id="branch">
+      <option value="">Select branch</option>
+      <option value="CSE">CSE</option>
+      <option value="EEE">EEE</option>
+      <option value="ECE">ECE</option>
+      <option value="IT">IT</option>
+      <option value="AIML">AIML</option>
+    </select>
+    <div class="error" id="branchError"></div>
+
+    <label>Phone Number</label>
+    <input type="text" id="phone" placeholder="Enter 10-digit phone number">
+    <div class="error" id="phoneError"></div>
+
+    <label>Email</label>
+    <input type="text" id="email" placeholder="Enter your email">
+    <div class="error" id="emailError"></div>
+<!-- register button -->
+    <button onclick="validateForm()">Register</button>
+    <div class="success" id="successMessage"></div>
+  </div>
+  <script src="task6JS.js"></script>
+</body>
+</html>
